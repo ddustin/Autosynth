@@ -75,7 +75,6 @@
 @property (assign) int _self;
 @property (assign) int _super;
 @property (assign) int _default;
-@property (assign) int _delete;
 
 @end
 
@@ -200,7 +199,6 @@
       @"self": @(7),
       @"super": @(7),
       @"default": @(7),
-      @"delete": @(7),
       };
     
     KeywordsModel *model = [KeywordsModel withDictionary:dictionary];
@@ -226,7 +224,6 @@
     XCTAssertEqual(model._self, 7, @"");
     XCTAssertEqual(model._super, 7, @"");
     XCTAssertEqual(model._default, 7, @"");
-    XCTAssertEqual(model._delete, 7, @"");
 }
 
 @end
