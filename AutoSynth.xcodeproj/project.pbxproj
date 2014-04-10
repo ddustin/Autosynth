@@ -21,6 +21,8 @@
 		581C031D18F5E836002F9B90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581C02FF18F5E836002F9B90 /* UIKit.framework */; };
 		581C032518F5E836002F9B90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 581C032318F5E836002F9B90 /* InfoPlist.strings */; };
 		581C032718F5E836002F9B90 /* AutoSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C032618F5E836002F9B90 /* AutoSynthTests.m */; };
+		581C033618F5E8AE002F9B90 /* Loadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C033518F5E8AE002F9B90 /* Loadable.m */; };
+		581C033818F60745002F9B90 /* Loadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C033518F5E8AE002F9B90 /* Loadable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		581C032218F5E836002F9B90 /* AutoSynthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoSynthTests-Info.plist"; sourceTree = "<group>"; };
 		581C032418F5E836002F9B90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		581C032618F5E836002F9B90 /* AutoSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSynthTests.m; sourceTree = "<group>"; };
+		581C033418F5E8AE002F9B90 /* Loadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loadable.h; path = Loadable/Loadable.h; sourceTree = "<group>"; };
+		581C033518F5E8AE002F9B90 /* Loadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Loadable.m; path = Loadable/Loadable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				581C030118F5E836002F9B90 /* AutoSynth */,
+				581C030218F5E836002F9B90 /* Supporting Files */,
 				581C032018F5E836002F9B90 /* AutoSynthTests */,
 				581C02FA18F5E835002F9B90 /* Frameworks */,
 				581C02F918F5E835002F9B90 /* Products */,
@@ -112,13 +117,10 @@
 		581C030118F5E836002F9B90 /* AutoSynth */ = {
 			isa = PBXGroup;
 			children = (
-				581C030A18F5E836002F9B90 /* AppDelegate.h */,
-				581C030B18F5E836002F9B90 /* AppDelegate.m */,
-				581C030D18F5E836002F9B90 /* Main.storyboard */,
-				581C031018F5E836002F9B90 /* ViewController.h */,
-				581C031118F5E836002F9B90 /* ViewController.m */,
-				581C031318F5E836002F9B90 /* Images.xcassets */,
-				581C030218F5E836002F9B90 /* Supporting Files */,
+				581C033318F5E859002F9B90 /* Loadable */,
+				581C033018F5E83D002F9B90 /* AppDelegate */,
+				581C033218F5E84D002F9B90 /* Storyboard */,
+				581C033118F5E848002F9B90 /* ViewController */,
 			);
 			path = AutoSynth;
 			sourceTree = "<group>";
@@ -126,12 +128,14 @@
 		581C030218F5E836002F9B90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				581C031318F5E836002F9B90 /* Images.xcassets */,
 				581C030318F5E836002F9B90 /* AutoSynth-Info.plist */,
 				581C030418F5E836002F9B90 /* InfoPlist.strings */,
 				581C030718F5E836002F9B90 /* main.m */,
 				581C030918F5E836002F9B90 /* AutoSynth-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = AutoSynth;
 			sourceTree = "<group>";
 		};
 		581C032018F5E836002F9B90 /* AutoSynthTests */ = {
@@ -150,6 +154,41 @@
 				581C032318F5E836002F9B90 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		581C033018F5E83D002F9B90 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				581C030A18F5E836002F9B90 /* AppDelegate.h */,
+				581C030B18F5E836002F9B90 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		581C033118F5E848002F9B90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				581C031018F5E836002F9B90 /* ViewController.h */,
+				581C031118F5E836002F9B90 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		581C033218F5E84D002F9B90 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				581C030D18F5E836002F9B90 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		581C033318F5E859002F9B90 /* Loadable */ = {
+			isa = PBXGroup;
+			children = (
+				581C033418F5E8AE002F9B90 /* Loadable.h */,
+				581C033518F5E8AE002F9B90 /* Loadable.m */,
+			);
+			name = Loadable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581C031218F5E836002F9B90 /* ViewController.m in Sources */,
+				581C033618F5E8AE002F9B90 /* Loadable.m in Sources */,
 				581C030C18F5E836002F9B90 /* AppDelegate.m in Sources */,
 				581C030818F5E836002F9B90 /* main.m in Sources */,
 			);
@@ -260,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581C032718F5E836002F9B90 /* AutoSynthTests.m in Sources */,
+				581C033818F60745002F9B90 /* Loadable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
