@@ -2,9 +2,9 @@ Authosynth allows you to automatically convert a NSDictionary onto properties of
 
 * Make the class a subclass of Loadable.
 * Create an instance using one of
-*  [MyClass withDictionary:@{@"key", @"value"]]
-*  [MyClass withJsonString:@"{"key": "value"}]
-*  [MyClass withJsonData:jsonDataVaraible]
+[MyClass withDictionary:@{@"key", @"value"]]
+[MyClass withJsonString:@"{"key": "value"}]
+[MyClass withJsonData:jsonDataVaraible]
 
 It handles complex and primitive types automatically, for example you can load the class below:
 
