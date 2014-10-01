@@ -37,7 +37,7 @@ It handles NSDate properties like DateModel below. In this case the value is exp
 
 	@end
 
-Loadable objects can have other Loadable objects as properties. Arrays of other loadable objects are also supported using the LoadbleArray macro.
+Loadable objects can have other Loadable objects as properties. Arrays of other loadable objects are also supported using the LoadbleArray macro. This macro creates an extra dummy property that allows Loadable to know the type of the array elements.
 
 	@interface InceptionModel : Loadable
 
