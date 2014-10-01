@@ -26,6 +26,8 @@ It handles complex and primitive types automatically, for example you can load t
 	@property (assign) unsigned long long k;
 	@property (assign) float l;
 	@property (assign) double m;
+	@property (assign) NSString *n;
+	@property (assign) NSNumber *o;
 
 	@end
 	
