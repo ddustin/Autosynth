@@ -4,15 +4,15 @@ Authosynth allows you to automatically convert a NSDictionary onto properties of
 * Create an instance using one of
 
   [MyClass withDictionary:@{@"key", @"value"]]
-
+  
   [MyClass withJsonString:@"{"key": "value"}]
-
+  
   [MyClass withJsonData:jsonDataVaraible]
 
 It handles complex and primitive types automatically, for example you can load the class below:
 
-  @interface PrimativesModel : Loadable
-  
+	@interface PrimativesModel : Loadable
+	
 	@property (assign) BOOL a;
 	@property (assign) char b;
 	@property (assign) int c;
